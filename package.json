@@ -1,0 +1,25 @@
+{
+  "name": "node-hue",
+  "version": "1.0.0",
+  "description": "Module to allow communication with Philips Hue API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickMele/node-hue.git"
+  },
+  "keywords": [
+    "philips",
+    "hue",
+    "api",
+    "module"
+  ],
+  "author": "Nick Mele",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NickMele/node-hue/issues"
+  },
+  "homepage": "https://github.com/NickMele/node-hue#readme"
+}
