@@ -1,3 +1,5 @@
+var Hue = require('../lib');
+
 var hue = new Hue();
 
 describe('Hue API', function() {

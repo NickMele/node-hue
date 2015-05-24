@@ -3,5 +3,3 @@ var chaiAsPromised = require("chai-as-promised");
 
 chai.should();
 chai.use(chaiAsPromised);
-
-global.Hue = require('../../lib');
