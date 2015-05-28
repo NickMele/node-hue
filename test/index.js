@@ -10,16 +10,16 @@ describe('Hue API', function() {
       return hue.discover().should.eventually.be.an('array');
     });
 
-    it('should be able to search the network via UPnP for a bridge', function() {
-      return hue.discover('upnp').should.eventually.be.an('array');
-    });
-
     it('should be able to search the network via N-UPnP for a bridge', function() {
       return hue.discover('nupnp').should.eventually.be.an('array');
     });
 
     it('should be able to search the network via IP scan for a bridge', function() {
       return hue.discover('ip').should.eventually.be.an('array');
+    });
+
+    it('should be able to search the network via UPnP for a bridge', function() {
+      return hue.discover('upnp').should.eventually.be.an('array');
     });
 
     it('should reject an invalid search method', function() {
