@@ -1,10 +1,10 @@
 var Hue = require('../lib');
 
-var hue = new Hue();
+describe('Hue', function() {
 
-describe('Hue API', function() {
+  describe('discover', function() {
 
-  describe('Discover', function() {
+    var hue = new Hue();
 
     it('should perform a waterfall search on the network for the bridge(s)', function () {
       return hue.discover().should.eventually.be.an('array');
@@ -25,6 +25,12 @@ describe('Hue API', function() {
     it('should reject an invalid search method', function() {
       return hue.discover('google').should.eventually.be.rejectedWith(Error, '`google` is not a valid search method.');
     });
+
+  });
+
+  describe('lights', function() {
+
+    var hue = new Hue();
 
   });
 
