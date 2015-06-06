@@ -4,7 +4,8 @@ describe('Hue', function() {
 
   describe('discover', function() {
 
-    var hue = new Hue();
+    var username = '1234567890';
+    var hue = new Hue(username);
 
     it('should perform a waterfall search on the network for the bridge(s)', function () {
       return hue.discover().should.eventually.be.an('array');
@@ -28,10 +29,10 @@ describe('Hue', function() {
 
   });
 
-  describe('lights', function() {
+  // describe('lights', function() {
 
-    var hue = new Hue();
+    // var hue = new Hue();
 
-  });
+  // });
 
 });
