@@ -1,13 +1,9 @@
-:heavy_exclamation_mark::heavy_exclamation_mark::heavy_exclamation_mark:
-# THIS MODULE IS IN EARLY DEVELOPMENT AND NOT READY TO BE USED
-:heavy_exclamation_mark::heavy_exclamation_mark::heavy_exclamation_mark:
-
 # Node Hue
 Module to communicate with Philips Hue API
 
 ## Installation
 
-```
+```shell
 npm install --save node-hue
 ```
 
@@ -16,7 +12,7 @@ npm install --save node-hue
 ### Auto-Discover Bridge
 This will search for bridges, and use the first valid bridge that the search comes across
 
-```
+```javascript
 var hue = new Hue(<UserName>);
 ```
 
