@@ -33,6 +33,20 @@ hue.config.user.delete(<UserName>)
 ```
 
 ## Lights
+These calls can be made immediately after creating the instance. Even if the module is still configuring the bridge. Internally the module will wait until the bridge is ready to accept calls. So essentially When making a call to get lights the flow is as follows:
+
+```
+var hue = new Hue('testUser');
+// 1. Module begins searching for a bridge on your network
+
+hue.lights.get();
+// 2. Module "queues" up your call and waits for bridge to be ready
+// 3. Module will continue searching for the bridge
+// 4. Once bridge is found, the user will be created on bridge (or just reused if already created)
+// 5. Module notifies itself that the bridge is ready
+// 6. Your call is now made to get the lights and your promise is resolved with the lights
+
+```
 
 ### Search for new lights
 
